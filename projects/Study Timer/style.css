@@ -12,6 +12,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .timer-container {
@@ -52,6 +53,28 @@ button:active {
   box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;
   transform: translateY(10px);
   transition: 100ms;
+}
+
+@media (max-width: 800px) {
+  #timer {
+    font-size: 120px; 
+  }
+
+  button {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+
+  .timer-container {
+    padding: 1rem;
+  }
+
+  html, body {
+    padding: 1rem;
+    text-align: center;
+    background-size: cover;
+  }
+
 }
 
 
