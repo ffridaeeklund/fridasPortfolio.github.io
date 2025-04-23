@@ -26,7 +26,7 @@ h6 {
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
-  width: fit-content; /* gör att bredden matchar innehållet */
+  width: fit-content;
 }
 
 .typewriter-animation {
@@ -39,7 +39,7 @@ h6 {
     width: 0ch;
   }
   to {
-    width: 19ch; /* justera efter hur långt din text är */
+    width: 19ch; /* justera efter hur lång texten är */
   }
 }
 
@@ -52,13 +52,11 @@ h6 {
   }
 }
 
-/* Optional: justera font-size på mindre skärmar */
 @media (max-width: 768px) {
   .cursor {
     font-size: 1.5rem;
   }
 }
-
 
 /*---------------------------------------------------------------------------------------*/
 
@@ -66,72 +64,72 @@ h6 {
   font-family: "Space Mono", cursive;
   font-size: 2rem;
   font-weight: 700;
-  color: black; /* Mörk färg för texten */
+  color: black; 
 }
 
 .profile-card {
-  border: 2px solid black; /* Rundade hörn */
-  box-shadow: 4px 6px black; /* Lägger till skugga */
+  border: 2px solid black; 
+  box-shadow: 4px 6px black;
 }
 
 .custom-btn {
   font-family: "Space Mono", cursive;
-  border-radius: 50px; /* Gör knappen helt rundad */
-  padding: 10px 20px; /* Lägger till padding (topp/botten och vänster/höger) */
+  border-radius: 50px; 
+  padding: 10px 20px; 
   background-color: #fccb30;
   color: black;
-  border: 2px solid black; /* Samma färg som bakgrunden */
+  border: 2px solid black;
   transition: none;
 }
 
 .custom-btn:hover {
-  background-color: #f7c317; /* Samma färg som bakgrunden */
-  color: white; /* Vit textfärg */
-  border: 2px solid black; /* Samma färg som bakgrunden */
-  box-shadow: 4px 6px black; /* Lägger till skugga */
+  background-color: #f7c317; 
+  color: white;
+  border: 2px solid black; 
+  box-shadow: 4px 6px black; 
 }
 
 .resume-container.education {
-  background-color: #c980da; /* Första kortet */
+  background-color: #c980da; 
 }
 
 .resume-container.experience {
-  background-color: #ff8049; /* Andra kortet */
+  background-color: #ff8049;
 }
 
 .resume-container.languages {
-  background-color: #ff7396; /* Tredje kortet */
+  background-color: #ff7396; 
 }
 
 .resume-container {
-  color: white; /* Gör texten vit för bättre kontrast */
-  border: 2px solid black; /* Ljus ram */
-  border-radius: 0.5rem; /* Rundade hörn */
-  padding: 1.5rem; /* Inre marginal */
+  color: white; 
+  border: 2px solid black; 
+  border-radius: 0.5rem;
+  padding: 1.5rem; 
   box-shadow: 4px 6px black;
 }
 
 .skill-item {
   background-color: #01afc8;
   color: white;
-  border-radius: 100px; /* Justera storleken på border radius efter behov */
-  border: 2px solid black; /* Valfri: Lägg till en border för att markera gränsen */
-  padding: 10px; /* Valfri: Lägg till padding för utrymme runt texten */
+  border-radius: 100px; 
+  border: 2px solid black; 
+  padding: 10px; 
   padding-left: 20px;
   padding-right: 20px;
   margin: 10px;
 }
 
 .skill-item:hover {
-  background-color: #01afc8; /* Samma färg som bakgrunden */
-  color: white; /* Vit textfärg */
-  border: 2px solid black; /* Samma färg som bakgrunden */
-  box-shadow: 4px 6px black; /* Lägger till skugga */
+  background-color: #01afc8; 
+  color: white;
+  border: 2px solid black;
+  box-shadow: 4px 6px black; 
 }
 
 .project-card {
-  border: 2px solid black; /* Rundade hörn */
-  box-shadow: 4px 6px black; /* Lägger till skugga */
+  border: 2px solid black; 
+  box-shadow: 4px 6px black; 
 }
 
 .project-card .card-img-top {
@@ -139,3 +137,9 @@ h6 {
   object-fit: cover; 
   object-position: top; 
 }
+
+.navbar-toggler {
+  border: none;
+  color: transparent;
+}
+
