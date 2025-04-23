@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: black;
+  background-color: rgb(236, 230, 222);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Mono", cursive;
+  font-weight:700;
+
+}
+
+/*Code source: https://codepen.io/frankeno/pen/QWmmxQb */
+.cursor {
+  position: relative;
+  margin: 0;
+  border-right: 2px solid rgba(71, 71, 71, 0.75);
+  font-size: 2rem;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: fit-content; /* gör att bredden matchar innehållet */
+}
+
+.typewriter-animation {
+  animation: typewriter 4s steps(40) 1s 1 normal both,
+             blinkingCursor 500ms steps(50) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 19ch; /* justera efter hur långt din text är */
+  }
+}
+
+@keyframes blinkingCursor {
+  0% {
+    border-right-color: rgba(110, 110, 110, 0.75);
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+/* Optional: justera font-size på mindre skärmar */
+@media (max-width: 768px) {
+  .cursor {
+    font-size: 1.5rem;
+  }
+}
+
+
+/*---------------------------------------------------------------------------------------*/
+
+.navbar-brand {
+  font-family: "Space Mono", cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black; /* Mörk färg för texten */
+}
+
+.profile-card {
+  border: 2px solid black; /* Rundade hörn */
+  box-shadow: 4px 6px black; /* Lägger till skugga */
+}
+
+.custom-btn {
+  font-family: "Space Mono", cursive;
+  border-radius: 50px; /* Gör knappen helt rundad */
+  padding: 10px 20px; /* Lägger till padding (topp/botten och vänster/höger) */
+  background-color: #fccb30;
+  color: black;
+  border: 2px solid black; /* Samma färg som bakgrunden */
+  transition: none;
+}
+
+.custom-btn:hover {
+  background-color: #f7c317; /* Samma färg som bakgrunden */
+  color: white; /* Vit textfärg */
+  border: 2px solid black; /* Samma färg som bakgrunden */
+  box-shadow: 4px 6px black; /* Lägger till skugga */
+}
+
+.resume-container.education {
+  background-color: #c980da; /* Första kortet */
+}
+
+.resume-container.experience {
+  background-color: #ff8049; /* Andra kortet */
+}
+
+.resume-container.languages {
+  background-color: #ff7396; /* Tredje kortet */
+}
+
+.resume-container {
+  color: white; /* Gör texten vit för bättre kontrast */
+  border: 2px solid black; /* Ljus ram */
+  border-radius: 0.5rem; /* Rundade hörn */
+  padding: 1.5rem; /* Inre marginal */
+  box-shadow: 4px 6px black;
+}
+
+.skill-item {
+  background-color: #01afc8;
+  color: white;
+  border-radius: 100px; /* Justera storleken på border radius efter behov */
+  border: 2px solid black; /* Valfri: Lägg till en border för att markera gränsen */
+  padding: 10px; /* Valfri: Lägg till padding för utrymme runt texten */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
+}
+
+.skill-item:hover {
+  background-color: #01afc8; /* Samma färg som bakgrunden */
+  color: white; /* Vit textfärg */
+  border: 2px solid black; /* Samma färg som bakgrunden */
+  box-shadow: 4px 6px black; /* Lägger till skugga */
+}
+
+.project-card {
+  border: 2px solid black; /* Rundade hörn */
+  box-shadow: 4px 6px black; /* Lägger till skugga */
+}
+
+.project-card .card-img-top {
+  height: 200px; 
+  object-fit: cover; 
+  object-position: top; 
+}
