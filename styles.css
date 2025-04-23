@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body {
+html, body {
   font-family: "Space Grotesk", sans-serif;
   color: black;
   background-color: rgb(236, 230, 222);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1,
