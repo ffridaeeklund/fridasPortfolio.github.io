@@ -3,18 +3,18 @@ const startBtn = document.getElementById('start-btn');
 const pauseBtn = document.getElementById('pause-btn');
 const timerLabel = document.getElementById('timer-label');
 
-let studyTime = 60 * 60; // 45 minuter i sekunder
-let breakTime = 15 * 60; // 15 minuter i sekunder
+let studyTime = 60 * 60; 
+let breakTime = 15 * 60; 
 let isStudyTime = true;
 let interval = null;
-let remainingTime = studyTime; // Starttiden sätts till studietid först
+let remainingTime = studyTime; 
 
 startBtn.addEventListener('click', startTimer);
 pauseBtn.addEventListener('click', pauseTimer);
 
 function startTimer() {
     
-  if (interval) return; // Förhindra att flera timers startar samtidigt
+  if (interval) return; 
     
     interval = setInterval(() => {
         updateTimer(remainingTime);
@@ -23,7 +23,7 @@ function startTimer() {
         if (remainingTime < 0) {
 
             clearInterval(interval);
-            interval = null; // Rensa intervallet när nedräkningen är slut
+            interval = null; 
 
             if (isStudyTime) {
 
@@ -37,7 +37,7 @@ function startTimer() {
                 isStudyTime = true;
                 timerLabel.textContent = 'STUDY';
                 remainingTime = studyTime;
-                startTimer(); // Starta studietimern på nytt
+                startTimer(); 
 
             }
 
@@ -58,8 +58,8 @@ function updateTimer(time) {
 
 function pauseTimer() {
 
-    clearInterval(interval); // Stoppa nedräkningen
-    interval = null; // Rensa intervallet så att vi kan återuppta det senare
+    clearInterval(interval); 
+    interval = null; 
     togglePauseButton();
 
 }
